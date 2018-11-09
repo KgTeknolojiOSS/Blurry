@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion COMPILE_SDK_VERSION as int
-    buildToolsVersion BUILD_TOOLS_VERSION
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
-        minSdkVersion MIN_SDK_VERSION as int
-        targetSdkVersion TARGET_SDK_VERSION as int
-        versionCode "git rev-list origin/master --count".execute().text.toInteger()
-        versionName VERSION_NAME
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 2
+        versionName "2.0.0"
     }
     buildTypes {
         release {
@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile project(':blurry')
-    compile "com.android.support:appcompat-v7:${SUPPORT_PACKAGE_VERSION}"
+    implementation project(':blurry')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
 }
