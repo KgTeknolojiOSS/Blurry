@@ -30,7 +30,7 @@ allprojects {
 dependencies {
     implementation 'com.github.KgTeknolojiOSS:Blurry:2.0.0'
 }
-
+```
 ### Functions
 
 **Overlay**
