@@ -17,11 +17,19 @@ How do I use it?
 ### Setup
 
 ##### Dependencies
-```groovy
-dependencies {
-    compile 'jp.wasabeef:blurry:2.1.1'
+1-)Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+  repositories {
+    maven { url 'https://jitpack.io' }
+  }
 }
 ```
+2-)Add the dependency:
+```
+dependencies {
+    implementation 'com.github.KgTeknolojiOSS:Blurry:2.0.0'
+}
 
 ### Functions
 
